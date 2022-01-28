@@ -1,0 +1,48 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  position: "relative";
+  bottom: 0;
+  width: 100%;
+  background: #161616;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.socialLinks {
+  flex: 6;
+  color: white;
+  display: flex;
+}
+
+.socialLinks > a {
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+.footerItems {
+  flex: 6;
+  color: white;
+  text-align: right;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footerContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .socialLinks {
+    flex: 12;
+    text-align: center;
+  }
+
+  .footerItems {
+    flex: 12;
+    text-align: center;
+  }
+}
